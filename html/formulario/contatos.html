@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Google Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aqui você irá encontrar contéudos relacionados a jogos de vídeo games">
+    <meta name="keywords" content="games, xbox, playstation">
+    <link rel="shortcut icon" href="img/favicon.icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="topo">
+            <img src="img/logo.png" alt="Logo controle de vídeo game">
+            <nav id="menu">
+                <ul>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                </ul>
+            </nav>    
+        </header>
+    <div id="banner-anime">
+            <img src="img/banner1.jpg" alt="Jogo God of War" id="anime1">
+            <img src="img/banner2.jpg" alt="Jogo God of War" id="anime2">
+    </div>
+    <h1>Entre em contato</h1>
+    <form id="contato">
+        <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p>
+                <label for="cNome">Usuário</label>
+                <input type="text" name="nome" id="cNome" maxlength="50" placeholder="Nome Completo" required autofocus>
+            </p>
+            <p>
+                <label for="Cmail">E-mail</label>
+                <input type="email" name="mail" id="Cmail" maxlength="50" placeholder="E-mail" required>
+            </p>
+            <p>
+                <label for="Csenha">Senha</label>
+                <input type="password" name="senha" id="Csenha" minlength="8" placeholder="Digite a senha" required>
+            </p>
+
+            <fieldset id="sexo">
+                <legend>Gênero</legend>
+                <p>
+                    <input type="radio" name="sexo" id="Cmasc">
+                    <label for="Cmasc">Masculino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="Cfem">
+                    <label for="Cfem">Feminino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="Cother">
+                    <label for="Cother">Outros</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="Cnasc">Data Nascimento: </label>
+                <input type="date" name="nasc" id="Cnasc">
+            </p>
+
+        </fieldset>
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+
+                <p>
+                    <label for="cRua" id="rua">Logradouro</label>
+                    <input type="text" name="rua" id="cRua" size="50px" maxlength="50" placeholder="Av.,Rua,Trav.">
+                </p>
+
+                <p>
+                    <label for="cNum">Numero: </label>
+                    <input type="number" name="num" id="cNum" min="0" max="99999" placeholder="número">
+                </p>
+                
+                <p>
+                    <label for="cEst" id="Estado: "></label>
+                    <select name="est" id="cEst">
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espiríto Santo</option>
+                            
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="cCid" id="cidade">Cidade: </label>
+                    <input type="text" name="cid" id="cCid" size="40px" maxlength="40" placeholder="Sua Cidade">
+                </p>
+            </fieldset>
+            <fieldset id="mensagem">
+                <legend>Mensagem</legend>
+
+                <label for="cUrg">Grau de Urgência</label>
+                Mín <input type="range" name="urg" id="cUrg" min="0" max="10" step="1"> Máx
+
+                <p><label for="cMsg">Mensagem</label></p>
+                <p>
+                    <textarea name="msg" id="cMsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                </p>
+            </fieldset>
+            <filelset id="pedido">
+            <legend>Quero um Console</legend>
+            <p>
+                <input type="checkbox" name="ped" id="Cped" checked>
+                <label for="Cped">Gostaria de adquirir um console quando for disponível</label>
+            </p>
+            <p>
+                <label for="cCons">Consoles: </label>
+                <select name="game" id="cCons">
+                <option value="PS">playstation</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Nintendo">Nintendo</option>
+            </select>
+            </p>
+            <p>
+                <label for="cCor"></label>
+                <input type="color" name="cor" id="cCor" value="#0000FF">
+            </p>
+            <p>
+                <label for="cQtde">Qtde</label>
+                <input type="number" name="qtde" id="cQtde" min="0" max="5" value="0">
+            </p>
+
+            <p>
+                <label for="cTot">Preço total</label>
+                <input type="text" name="tot" id="Ctot" placeholder="Total a pagar" readonly>
+            </p>
+        </filelset>
+        <div id="botao">
+            <button type="submit" name="Enviar" class="btn">Enviar</button>
+            <button type="reset" name="Limpar" class="btn">Limpar</button>
+        </div>
+
+    </form>
+
+    <footer id="rodape">
+        <p>Somente para fins educativos.</p>
+        <p>
+            <a href="https://pt-br.facebook.com/" target="_blank">
+                <img src="img/logo-face.png" alt=""></a>
+            <a href="https://www.instagram.com/luiz._siilva" target="_blank">
+                <img src="img/logo-instagram.png" alt=""></a>
+            <a href="https://twitter.com/i/flow/login"target="_blank">
+                <img src="img/logo-twitter.png" alt=""></a>
+        </p>
+    </footer>
+    </div>  
+</body>
+
+</html>
